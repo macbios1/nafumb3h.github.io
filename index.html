@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nafumb3h's Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Fraunces:ital,opsz,wght@1,9..144,400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="flower" viewBox="-20 -20 40 40">
+      <g fill="currentColor">
+        <ellipse cx="0" cy="-10" rx="5.5" ry="9"/>
+        <ellipse cx="0" cy="-10" rx="5.5" ry="9" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-10" rx="5.5" ry="9" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-10" rx="5.5" ry="9" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-10" rx="5.5" ry="9" transform="rotate(288)"/>
+      </g>
+      <circle r="4" fill="#ffe2a8"/>
+    </symbol>
+  </svg>
+  <div class="sky" aria-hidden="true"></div>
+  <div class="bloom b1" aria-hidden="true"></div>
+  <div class="bloom b2" aria-hidden="true"></div>
+  <div class="bloom b3" aria-hidden="true"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="moon" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="brand">
+    <button class="logo" id="logo" type="button" aria-label="Open profile" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <g class="wings" fill="currentColor">
+          <path d="M11 11.2C10 7 6.8 3.6 3.6 4.1 2 4.4 2 7.6 3.4 10.2c.9 1.7 3.6 2.3 7.6 1.4Z"/>
+          <path d="M11 13c-3.6-.6-6.3.5-6.7 3-.4 2.3 1.5 4 3.6 3.2 1.9-.7 2.9-3.3 3.1-6.2Z" opacity=".8"/>
+          <g transform="translate(24 0) scale(-1 1)">
+            <path d="M11 11.2C10 7 6.8 3.6 3.6 4.1 2 4.4 2 7.6 3.4 10.2c.9 1.7 3.6 2.3 7.6 1.4Z"/>
+            <path d="M11 13c-3.6-.6-6.3.5-6.7 3-.4 2.3 1.5 4 3.6 3.2 1.9-.7 2.9-3.3 3.1-6.2Z" opacity=".8"/>
+          </g>
+        </g>
+        <rect x="11.2" y="7.5" width="1.6" height="12" rx=".8" fill="currentColor"/>
+        <path d="M12 8C11.5 5.5 10.5 4 9 3.2M12 8C12.5 5.5 13.5 4 15 3.2" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+      </svg>
+    </button>
+      <span class="brand-name" id="brandName">Nafumb3h</span>
+    </div>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-haspopup="menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" role="menu" aria-hidden="true">
+    <button type="button" role="menuitem" id="mProfile">My profile</button>
+    <button type="button" role="menuitem" id="mReplay">Replay the roll</button>
+    <button type="button" role="menuitem" id="mCelebrate">Celebrate</button>
+    <button type="button" role="menuitem" id="mCalm">Calm mode <span class="state" id="calmState">Off</span></button>
+    <button type="button" role="menuitem" id="mStars">Twinkling stars <span class="state" id="starsState">On</span></button>
+  </div>
+
+  <main>
+    <div class="sec" id="s1">
+      <div class="line day" data-text="24"></div>
+      <div class="line mon" data-text="Nov"></div>
+    </div>
+    <div class="sec" id="s2"><div class="line" data-text="Nafumb3h"></div></div>
+    <div class="sec" id="s3"><div class="line" data-text="happy birthday"></div></div>
+    <button id="again" type="button">Reload</button>
+  </main>
+
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="pname">
+      <div class="garden" id="garden" aria-hidden="true">
+        <span class="corner c1"><svg viewBox="-20 -20 40 40"><use href="#flower"/></svg></span>
+        <span class="corner c2"><svg viewBox="-20 -20 40 40"><use href="#flower"/></svg></span>
+        <span class="corner c3"><svg viewBox="-20 -20 40 40"><use href="#flower"/></svg></span>
+      </div>
+      <button class="close" id="close" type="button" aria-label="Close">&times;</button>
+      <button class="avatar" id="avatar" type="button" aria-label="View profile photo">
+        <img id="avatarImg" alt="Profile photo">
+        <span class="initial" aria-hidden="true">N</span>
+      </button>
+      <p class="hint">Tap the photo to view</p>
+      <h2 id="pname">Nafumb3h</h2>
+      <p class="sub">Birthday girl</p>
+      <p class="wish">Wishing you a day as lovely as you are.</p>
+      <div class="facts">
+        <div class="fact"><b>24 Nov</b><span>Birthday</span></div>
+        <div class="fact"><b>Sagittarius</b><span>Star sign</span></div>
+        <div class="fact"><b>Topaz</b><span>Birthstone</span></div>
+        <div class="fact"><b>Chrysanthemum</b><span>Birth flower</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="viewer" id="viewer" aria-hidden="true">
+    <div class="bg" id="viewerBg"></div>
+    <button class="close" id="viewerClose" type="button" aria-label="Close photo">&times;</button>
+    <img id="viewerImg" alt="Profile photo">
+  </div>
+
+
+  <div class="sparks" id="sparks" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
